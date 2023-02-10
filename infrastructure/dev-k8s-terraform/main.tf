@@ -222,14 +222,4 @@ output worker-2-ip {
   sensitive   = false
   description = "public ip of the worker-2"
 }
-```
 
-- Commit the change, then push the cloudformation template to the remote repo.
-
-```bash
-git add .
-git commit -m 'added dev-k8s-terraform  for kubernetes infrastructure'
-git push --set-upstream origin feature/msp-15
-git checkout dev
-git merge feature/msp-15
-git push origin dev 
